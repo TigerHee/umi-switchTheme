@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-umi",
+  "globals": {
+    "_DEV_": false,
+    "_PUBLIC_PATH_": false,
+    "_RELEASE_": false
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off"
+  }
+}
