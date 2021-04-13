@@ -1,4 +1,4 @@
-import { formatMessage, setLocale, FormattedHTMLMessage } from 'umi-plugin-locale';
+import { formatMessage, setLocale, FormattedHTMLMessage } from 'umi';
 import moment from 'moment';
 
 export const _t = (key, values) => {

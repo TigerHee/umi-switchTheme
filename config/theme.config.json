@@ -1,0 +1,25 @@
+{
+  "theme": [
+    {
+      "key": "normal",
+      "fileName": "normal.css",
+      "modifyVars": {
+        "@primary-color": "#0FCD8C",
+        "@btn-primary-color": "#01081E"
+      }
+    },
+    {
+      "key": "dark",
+      "fileName": "dark.css",
+      "modifyVars": {
+        "@primary-color": "#ff6100",
+        "@btn-primary-color": "#ff6100"
+      }
+    }
+  ],
+  "min": true,
+  "isModule": true,
+  "ignoreAntd": false,
+  "ignoreProLayout": false,
+  "cache": true
+}
