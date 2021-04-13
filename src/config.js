@@ -14,3 +14,14 @@ export const seoInfo = {
     keywords: 'keywords',
   },
 }
+
+export const LANG_LIST = [
+  {
+    key: 'en_US',
+    label: 'English',
+  },
+  {
+    key: 'zh_CN',
+    label: '中文',
+  },
+];

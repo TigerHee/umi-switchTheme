@@ -3,7 +3,6 @@ import FormData from 'form-data';
 import moment from 'moment';
 import Decimal from 'decimal.js/decimal';
 import EventEmitter from 'event-emitter';
-import { maxDecimalsPrecision } from 'src/config';
 import { _t } from 'utils/lang';
 
 Decimal.set({ precision: 128 });
@@ -497,19 +496,6 @@ export const getPrecisionFromIncrement = (increment, maxPrecision = 8) => {
     return decimalsArr[1].length;
   }
   return 0;
-};
-
-export const createDecimals = (decimalPrecision) => {
-  const decimals = [];
-  while (decimalPrecision > 0) {
-    decimals.push({
-      length: decimalPrecision,
-      group: Math.pow(10, maxDecimalsPrecision - decimalPrecision),
-      label: _t('trade.sellBuy.decimal', { num: decimalPrecision }),
-    });
-    decimalPrecision -= 1;
-  }
-  return decimals;
 };
 
 /**
